@@ -4,7 +4,7 @@
 #include "tensorflow/lite/kernels/register.h"
 
 int main() {
-    std::string path = "/Users/daniel/Downloads/simple_model.tflite";
+    std::string path = "/Users/daniel/Downloads/tf_model.tflite";
 
     auto model = tflite::FlatBufferModel::BuildFromFile(path.c_str());
     auto resolver = tflite::ops::builtin::BuiltinOpResolver();
